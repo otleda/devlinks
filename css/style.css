@@ -1,3 +1,13 @@
+:root {
+    /* variáveis color */
+    --stroke-color-dark-mode:  rgba(255, 255, 255, 0.5);
+    --surface-color-dark-mode: rgba(255, 255, 255, 0.1);
+    --text-color-dark-mode: rgba(255, 255, 255, 1);
+
+    --surface-color-dark-mode-hover: rgba(255, 255, 255, 0.05);
+    --stroke-color-dark-mode-hover: white;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -17,19 +27,61 @@ body {
 #container {
     width: 360px;
     margin: 56px auto 0px;
-    border: 1px solid red;
+    padding: 0 24px;
 }
+/* Profile */
 #profile {
     text-align: center;
 }
 #profile img {
     width: 112px;
-    border: white 5px solid;
+    border: white 3px solid;
     border-radius: 50%;
 }
-
 #profile p {
     font-size: 500;
     line-height: 24px;
     margin-top: 8px;
 }
+/* Links */
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    list-style: none;
+    padding: 24px;
+}
+ul li {
+    text-align: center;
+}
+ul li a {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding: 16px 24px;
+    text-decoration: none;
+    background: var(--surface-color-dark-mode);
+    border: 1px solid var(--stroke-color-dark-mode);
+    border-radius: 8px;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+ul li a:hover {
+    background: var(--surface-color-dark-mode-hover);
+    border: 1px solid var(--stroke-color-dark-mode-hover);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
