@@ -6,8 +6,8 @@
 
     --surface-color-dark-mode-hover: rgba(255, 255, 255, 0.05);
     --stroke-color-dark-mode-hover: white;
+    --highlight-color-dark-mode: rgba(255, 255, 255, 0.2);
 }
-
 * {
     margin: 0;
     padding: 0;
@@ -23,7 +23,6 @@ body {
         no-repeat 
         top center/cover ;  
 } 
-
 #container {
     width: 360px;
     margin: 56px auto 0px;
@@ -70,11 +69,25 @@ ul li a:hover {
     background: var(--surface-color-dark-mode-hover);
     border: 1px solid var(--stroke-color-dark-mode-hover);
 }
-
-
-
-
-
+#social-midia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 24px 0;
+    font-size: 24px;
+}
+#social-midia a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 50%;
+    transition: background .2s;
+}
+#social-midia a:hover {
+    background: var(--highlight-color-dark-mode);
+}
 
 
 
